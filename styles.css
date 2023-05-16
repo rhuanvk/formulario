@@ -1,0 +1,36 @@
+/*:root {
+  --main-color: ;
+  --aux-color ;
+  --text: ;
+    
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.bg-container {
+    width: 600px;
+    background-image: url(./img/wp.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    height: 1000px;
+}
+
+.quote {
+    background-color: #00000050;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    right: 50%;
+}
