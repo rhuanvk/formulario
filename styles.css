@@ -1,53 +1,53 @@
-/*:root {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
   --main-color: ;
-  --aux-color ;
-  --text: ;
+  --aux-color: ;
+  --bg-main: #000000;
+  --bg-aux: #060606;
+  --text: #b9b9b9;
     
-}*/
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--text);
 }
 
 h1 {
     font-size: 20px;
 }
 
-body {
-    display: flex;
-    flex-direction: row;
-}
-
 .bg-container {
-    width: 30vw;
-    height: 100vh;
+    width: 30%;
+    min-height: 100vh;
     background-image: url(./img/wp.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     position: relative;
 }
 
 .quote {
-    background-color: #00000045;
+    background-color: #00000099;
     width: 100%;
     position: absolute;
     padding: 50px;
-    margin-top: 15vh;
+    margin-top: 35%;
     text-align: center;
-    color: white;
+    font-weight: bold;
 }
 
-.content {
- width: 100%;   
+.right {
+    max-width: 70%;
+    display: flex;
 }
 
 .opening {
-    height: 1fr;
-    background-color: lightgray;
+    background-color: var(--bg-main);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -56,9 +56,10 @@ body {
 }
 
 .form-container {
-    height: 1fr;
-    background-color: #ccb8d1;
+    background-color: var(--bg-aux);
+    box-shadow: 0px 1px 3px rgb(22, 22, 22);
     padding: 25px;
+    margin-bottom: 3px;
 }
 
 form {
@@ -71,6 +72,17 @@ form {
 
 input {
     width: 200px;
+    background-color: var(--bg-main);
+    border: 1px solid var(--text);
+    margin-top: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px 46px;
+    background-color: var(--bg-aux);
+    border: 1px solid var(--text);
+    font-size: 16px;
 }
 
 .input-container {
@@ -79,7 +91,7 @@ input {
 }
 
 .ending {
-    height: 100%;
-    background-color: lightgray;
+    background-color: var(--bg-main);
     padding: 25px;
+    border: 2px solid yellow;
 }
