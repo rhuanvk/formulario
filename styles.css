@@ -13,12 +13,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Courier New', Courier, monospace;
     color: var(--text);
 }
 
-h1 {
+h1, .quote p {
     font-size: 20px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.05em;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .bg-container {
@@ -26,28 +35,29 @@ h1 {
     min-height: 100vh;
     background-image: url(./img/wp.jpg);
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
 .quote {
-    background-color: #00000099;
+    background-color: #000000aa;
     width: 100%;
     position: absolute;
     padding: 50px;
-    margin-top: 35%;
+    margin-top: 30%;
     text-align: center;
     font-weight: bold;
 }
 
 .right {
-    max-width: 70%;
+    width: 70%;
     display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--bg-main);
 }
 
 .opening {
-    background-color: var(--bg-main);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -57,7 +67,7 @@ h1 {
 
 .form-container {
     background-color: var(--bg-aux);
-    box-shadow: 0px 1px 3px rgb(22, 22, 22);
+    box-shadow: 0px 2px 5px rgb(22, 22, 22, 0.8);
     padding: 25px;
     margin-bottom: 3px;
 }
@@ -70,28 +80,30 @@ form {
     row-gap: 8px;
 }
 
-input {
-    width: 200px;
-    background-color: var(--bg-main);
-    border: 1px solid var(--text);
-    margin-top: 4px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 6px 46px;
-    background-color: var(--bg-aux);
-    border: 1px solid var(--text);
-    font-size: 16px;
-}
-
 .input-container {
     display: flex;
     flex-direction: column;
 }
 
+input {
+    width: 25vw;
+    border: none;
+    border-radius: 2px;
+    margin-top: 4px;
+    background-color: var(--text);
+    color: var(--bg-main)
+}
+
+button {
+    padding: 6px 46px;
+    margin-bottom: 15px;
+    background-color: var(--bg-aux);
+    border: 1px solid var(--text);
+    border-radius: 2px;
+    font-size: 16px;
+}
+
 .ending {
     background-color: var(--bg-main);
     padding: 25px;
-    border: 2px solid yellow;
 }
